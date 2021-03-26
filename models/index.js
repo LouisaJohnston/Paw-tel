@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === 'development') {
         console.log(`mongoDB connection @ ${db.host}:${db.port}`)
     })
 
-    db.on('error', () => {
+    db.on('error', (err) => {
         console.error(`someting has gone wrong with the DB \n ${err}`)
     })
 } else {
