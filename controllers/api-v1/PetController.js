@@ -60,14 +60,27 @@ router.put('/:id', authLockedRoute, async (req, res) => {
         let id = res.locals.user._id
         const foundUser = await User.findById(id).populate('pets')
         const updatedPet = foundUser.pets.id(req.params.id)
-
-        updatedPet.pet_name = req.body.pet_name,
-        updatedPet.breed = req.body.breed,
-        updatedPet.age = req.body.age,
-        updatedPet.weight = req.body.weight,
-        updatedPet.special_needs = req.body.special_needs,
-        updatedPet.medications = req.body.medications,
-        updatedPet.image_url = req.body.image_url
+        if (req.body.pet_name !== ""){
+            updatedPet.pet_name = req.body.pet_name
+        }
+        if (req.body.breed !== ""){
+            updatedPet.breed = req.body.breed
+        }
+        if (req.body.age !== ""){
+            updatedPet.age = req.body.age
+        }
+        if (req.body.weight !== ""){
+            updatedPet.weight = req.body.weight
+        }
+        if (req.body.special_needs!== ""){
+            updatedPet.special_needs = req.body.special_needs
+        }
+        if (req.body.medications !== ""){
+            updatedPet.medications = req.body.medications
+        }
+        if (req.body.age !== ""){
+            updatedPet.age = req.body.age
+        }
 
         await foundUser.save()
         res.json(updatedPet)
