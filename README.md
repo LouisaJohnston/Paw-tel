@@ -4,6 +4,8 @@
 
 Paw-tel is a full-stack application utiltizing MERN. In this application, users are able to create profiles for their pets, view housing options for their pets, and assign their pets in a "home-away-from-home" of their choosing.
 
+View the live site here: https://pawtel-application.herokuapp.com/
+
 ## User Stories
 
 * As a user (AAU) I want to be able to create, edit or delete a profile for my pet with their needs (medicines, care guidelines etc)
