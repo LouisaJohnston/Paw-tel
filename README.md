@@ -1,4 +1,4 @@
-# Paw-tel
+# Pawtel - Client
 
 ## Description
 
@@ -10,53 +10,16 @@ Paw-tel is a full-stack application utiltizing MERN. In this application, users 
 * (AAU) I want to be able to be able to find an appropriate “pet air bnb” in Seattle for my pet. 
 * (AAU) I want to be able to browse and favorite housing profiles.
 
+## Images
 
-## Group Roles
+![main](/public/img/homepage.PNG)
+![main](/public/img/register.PNG)
+![main](/public/img/petpage.PNG)
 
-### Dagm
-* user components 
-* auth
+## Installation
 
-### Kathy
-* some user backend
-* css/bootstrap
-
-### Louisa
-* some user backend
-* skeleton
-
-## Sprints
-
-#### Friday 3/19/21
-* Soft/hard pitches
-* Test APIs
-* Complete ReadMe - routes, schemas, sprints
-* Make wireframes
-* Create server and client side folders
-* Assign roles
-
-#### Saturday and Sunday
-* Research 
-* plan basic crud routes
-
-#### Monday 
-* Render user side
-* Work on user routes 
-
-#### Tuesday
-* pets component
-* hotel component
-
-#### Wednesday
-* MVP
-
-#### Thursday
-* debugging
-* css/boot
-
-#### Friday
-* debugging
-* css/boot
+* Fork and clone both the client and server repos
+* npm install packages and dependencies
 
 ## Routes
 ### RESTful routing chart for Pet Hotel Hosts
@@ -91,7 +54,7 @@ DELETE | /pets/:id | Removes a pet from the user's pet list | Redirect to /pets
 ### RESTful routing chart for Hotels
 | Method | URL | Functionality | view |
 |--------|-----|---------------|------|
-GET | /hotels | Displays the host's hotel list | Render hotels
+GET | /hotels | Displays the ho's hotel list | Render hotels
 POST | /hotels | Adds a hotel to the host's hotel list via a form | Redirect to /hotels
 GET | /hotels/:id | Show details about a specific hotel from the host's hotel list | Render hotels/:id
 PUT | /hotels/:id| Updates a specific hotel's information | Redirect to /hotels/:id
@@ -99,23 +62,23 @@ DELETE | /hotels/:id | Removes a pet from the host's hotel list | Redirect to /h
 
 ## Database Schema
 
-![main](/public/img/schema.PNG)
+![main](/public/img/wireframes/schema.PNG)
 
 ## Wireframes
-![main](/public/img/petsprofile.png)
-![main](/public/img/petprofile.png)
-![main](/public/img/hotelprofile.png)
-![main](/public/img/hotellist.png)
-![main](/public/img/favoritehotels.png)
-![main](/public/img/hosthotelsprofile.png)
-![main](/public/img/hosthotelprofile.png)
+![main](/public/img/wireframes/petsprofile.png)
+![main](/public/img/wireframes/petprofile.png)
+![main](/public/img/wireframes/hotelprofile.png)
+![main](/public/img/wireframes/hotellist.png)
+![main](/public/img/wireframes/favoritehotels.png)
+![main](/public/img/wireframes/hosthotelsprofile.png)
+![main](/public/img/wireframes/hosthotelprofile.png)
 
 ## Technologies and APIs
 
 #### Technologies
 
 * Front-end: React
-* Backend: Mongoose, MongoDB, Express, NodeJS, bcryptjs,jsonwebtoken
+* Backend: Mongoose, MongoDB, Express, NodeJS, bcryptjs, jsonwebtoken
 
 #### APIs
 * https://thedogapi.com/ (10k requests/month)
@@ -130,3 +93,9 @@ DELETE | /hotels/:id | Removes a pet from the host's hotel list | Redirect to /h
 * Search by location
 
 ## Resources
+All images were provided by Unsplash.
+
+1. Materials-ui | https://material-ui.com/
+2. NavLink | https://reactrouter.com/web/api/NavLink
+
+Created by the Power Team.
